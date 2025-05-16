@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:background="@drawable/toolbar"
+    android:padding="8dp">
+
+    <!-- Главная -->
+    <ImageButton
+        android:id="@+id/nav_home"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:src="@drawable/home_selector"
+        tools:ignore="ContentDescription">
+    </ImageButton>
+
+    <!-- Войти -->
+    <ImageButton
+        android:id="@+id/nav_login"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerInside"
+        android:src="@drawable/user_selector"
+        tools:ignore="ContentDescription"/>
+
+    <!-- Мои бронирования -->
+    <ImageButton
+        android:id="@+id/nav_bookings"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerInside"
+        android:src="@drawable/calendar_clock_selector"
+        tools:ignore="ContentDescription"/>
+
+    <!-- История -->
+    <ImageButton
+        android:id="@+id/nav_history"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerInside"
+        android:src="@drawable/clock_selector"
+        tools:ignore="ContentDescription"/>
+</LinearLayout>
